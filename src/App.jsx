@@ -75,10 +75,45 @@ function App() {
         >
           <ScrapbookCover />
           
-          {/* Blank inner cover page (left) */}
+          {/* Blank inner cover page (left) - Now Group Members Page */}
           <ScrapbookPage isLeft={true} pageNum={""}>
-             <div className="h-full w-full flex items-center justify-center opacity-30">
-                <div className="w-16 h-16 border-4 border-dashed border-gray-400 rounded-full transform -rotate-12"></div>
+             <div className="h-full w-full flex flex-col items-center justify-center p-8 bg-cover bg-center">
+                <div className="bg-[#f4ebd0] p-6 shadow-md transform rotate-1 relative w-full max-w-sm scrapbook-shadow">
+                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-20 h-6 tape-edge -rotate-2"></div>
+                   
+                   <h2 className="font-hand text-3xl text-[#4a3b32] mb-4 text-center border-b border-[#8c7a6b] pb-2 border-dashed">
+                     Disusun Oleh:
+                   </h2>
+                   
+                   <ul className="font-typewriter text-sm text-[#5c4a3d] space-y-3 mt-4">
+                     <li className="flex justify-between items-end border-b border-[#dcb99c] border-dotted pb-1">
+                       <span className="font-bold">Asep Taufik Hidayat</span> 
+                       <span>240803036</span>
+                     </li>
+                     <li className="flex justify-between items-end border-b border-[#dcb99c] border-dotted pb-1">
+                       <span className="font-bold">Mauizah Hanifah</span> 
+                       <span>240803053</span>
+                     </li>
+                     <li className="flex justify-between items-end border-b border-[#dcb99c] border-dotted pb-1">
+                       <span className="font-bold">Shoqibah Wijaya Kusuma</span> 
+                       <span>240803057</span>
+                     </li>
+                     <li className="flex justify-between items-end border-b border-[#dcb99c] border-dotted pb-1">
+                       <span className="font-bold">Mona Putri</span> 
+                       <span>240803059</span>
+                     </li>
+                     <li className="flex justify-between items-end border-b border-[#dcb99c] border-dotted pb-1">
+                       <span className="font-bold">Sifa Hayatul Husna</span> 
+                       <span>240803063</span>
+                     </li>
+                     <li className="flex justify-between items-end border-b border-[#dcb99c] border-dotted pb-1">
+                       <span className="font-bold">Najwa Ananda Putri</span> 
+                       <span>-</span>
+                     </li>
+                   </ul>
+                   
+                   <div className="absolute -bottom-4 right-4 w-16 h-6 tape-edge rotate-3"></div>
+                </div>
              </div>
           </ScrapbookPage>
           
